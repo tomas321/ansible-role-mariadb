@@ -17,3 +17,5 @@
 tests/
 vagrant-tests/
 docker-tests/
+
+templates/*.sql
