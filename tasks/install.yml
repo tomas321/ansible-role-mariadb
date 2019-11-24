@@ -2,6 +2,7 @@
 ---
 
 - name: Add official MariaDB repository
+  when: ansible_distribution in ['Fedora', 'RedHat'] or ansible_os_family in ['Fedora', 'RedHat']
   yum_repository:
     name: MariaDB
     description: Official MariaDB repository
